@@ -1,5 +1,5 @@
 from unittest import TestCase
-from ..tictactoe import board
+from tictactoe import board
 
 
 class TestBoard(TestCase):
