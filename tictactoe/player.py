@@ -1,6 +1,3 @@
-import exceptions.player_exceptions as pe
-
-
 class Player:
     __name = ''
 
