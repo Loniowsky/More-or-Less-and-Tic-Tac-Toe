@@ -1,6 +1,7 @@
 from unittest import TestCase
 from tictactoe.gameplay import Gameplay
 from tictactoe.board import Board
+from unittest.mock import patch
 
 
 class TestGameplay(TestCase):
