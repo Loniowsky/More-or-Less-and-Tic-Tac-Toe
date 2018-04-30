@@ -3,10 +3,11 @@ import re
 
 def move_validation(user_input):
     try:
-        int(user_input)
-        return True
+        if int(user_input) > -1:
+            return True
     except ValueError:
         return False
+    return False
 
 
 def name_validation(user_input):
