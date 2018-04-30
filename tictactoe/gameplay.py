@@ -14,12 +14,12 @@ class Gameplay:
         for i in range(board_width):
             for j in range(board_height):
                 self._board.set_element(i, j, '-')
-        while self.__player_one.is_name_empty() or self.__player_two.is_name_empty():
-            try:
-                self.__player_one.set_name(input("Input first player name "))
-                self.__player_two.set_name(input("Input second player name "))
-            except Exception as error:
-                print(error.message)
+        # while self.__player_one.is_name_empty() or self.__player_two.is_name_empty():
+        #     try:
+        #         self.__player_one.set_name(input("Input first player name "))
+        #         self.__player_two.set_name(input("Input second player name "))
+        #     except Exception as error:
+        #         print(error.message)
 
     def is_win(self):
         for i in range(self._board.get_height()):
