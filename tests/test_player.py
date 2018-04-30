@@ -1,5 +1,5 @@
 from unittest import TestCase
-from tictactoe import player
+from ..tictactoe import player
 import tictactoe.exceptions.player_exceptions as pe
 
 

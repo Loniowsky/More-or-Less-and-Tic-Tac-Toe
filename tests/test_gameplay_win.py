@@ -1,6 +1,6 @@
 from unittest import TestCase
-from tictactoe import gameplay
-from tictactoe import board
+from ..tictactoe import gameplay
+from ..tictactoe import board
 
 
 class TestGameplay(TestCase):
