@@ -1,6 +1,6 @@
 from unittest import TestCase
-import player
-import exceptions.player_exceptions as pe
+from tictactoe import player
+import tictactoe.exceptions.player_exceptions as pe
 
 
 class TestPlayer(TestCase):
