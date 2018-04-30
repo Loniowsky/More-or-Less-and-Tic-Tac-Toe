@@ -1,13 +1,13 @@
 from unittest import TestCase
-from tictactoe import gameplay
-from tictactoe import board
+from tictactoe.gameplay import Gameplay
+from tictactoe.board import Board
 
 
 class TestGameplay(TestCase):
 
     def test_if_win_returns_true_when_win(self):
-        test_gameplay = gameplay.Gameplay()
-        test_board = board.Board(3, 3)
+        test_gameplay = Gameplay()
+        test_board = Board(3, 3)
         test_board.set_element(0, 0, 'o')
         test_board.set_element(0, 1, 'o')
         test_board.set_element(0, 2, 'x')
@@ -24,8 +24,8 @@ class TestGameplay(TestCase):
         self.assertEqual(test_gameplay.is_win(), True)
 
     def test_if_win_returns_false_when_no_win(self):
-        test_gameplay = gameplay.Gameplay()
-        test_board = board.Board(3, 3)
+        test_gameplay = Gameplay()
+        test_board = Board(3, 3)
         test_board.set_element(0, 0, 'o')
         test_board.set_element(0, 1, 'o')
         test_board.set_element(0, 2, 'x')

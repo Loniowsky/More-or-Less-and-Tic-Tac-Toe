@@ -1,22 +1,22 @@
 from unittest import TestCase
-from tictactoe import board
+from tictactoe.board import Board
 
 
 class TestBoard(TestCase):
     def test_check_if_str_return_proper_repr(self):
-        test_board = board.Board(3, 3)
+        test_board = Board(3, 3)
         test_board.set_element(1, 1, 'x')
         expected_str = "- - - \n\n- x - \n\n- - - \n\n"
         self.assertEqual(test_board.__str__(), expected_str)
 
     def test_check_if_str_return_proper_repr2(self):
-        test_board = board.Board(1, 1)
+        test_board = Board(1, 1)
         test_board.set_element(0, 0, 'x')
         expected_str = "x \n\n"
         self.assertEqual(test_board.__str__(), expected_str)
 
     def test_check_if_str_return_proper_repr3(self):
-        test_board = board.Board(5, 5)
+        test_board = Board(5, 5)
         test_board.set_element(0, 0, 'o')
         test_board.set_element(0, 1, 'x')
         test_board.set_element(0, 2, 'o')
@@ -30,13 +30,13 @@ class TestBoard(TestCase):
         self.assertEqual(test_board.__str__(), expected_str)
 
     def test_check_if_str_return_proper_repr4(self):
-        test_board = board.Board(2, 3)
+        test_board = Board(2, 3)
         test_board.set_element(0, 0, 'x')
         expected_str = "x - \n\n- - \n\n- - \n\n"
         self.assertEqual(test_board.__str__(), expected_str)
 
     def test_check_if_str_return_proper_repr4(self):
-        test_board = board.Board(2, 2)
+        test_board = Board(2, 2)
         test_board.set_element(0, 0, 'o')
         test_board.set_element(0, 1, 'o')
         test_board.set_element(1, 0, 'o')
@@ -45,6 +45,6 @@ class TestBoard(TestCase):
         self.assertEqual(test_board.__str__(), expected_str)
 
     def test_check_if_str_return_proper_repr5(self):
-        test_board = board.Board(3, 3)
+        test_board = Board(3, 3)
         expected_str = "- - - \n\n- - - \n\n- - - \n\n"
         self.assertEqual(test_board.__str__(), expected_str)
