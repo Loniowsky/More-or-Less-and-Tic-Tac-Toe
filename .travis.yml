@@ -6,6 +6,8 @@ install:
    - pip install coverage
    - pip install nose
 script:
-    - nosetests --with-coverage --cover-package=tests,More_or_less, tictactoe
+    - nosetests --with-coverage --cover-package=tests
+    - nosetests --with-coverage --cover-package=tictactoe
+
 after_success:
     - coveralls
