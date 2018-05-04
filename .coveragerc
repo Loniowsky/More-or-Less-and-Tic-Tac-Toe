@@ -6,8 +6,4 @@ omit =
     */site-packages/ordereddict.py
     */site-packages/nose/*
     */unittest2/*
-    */home/*	
-
-exclude_lines =
-    # Have to re-enable the standard pragma
-    pragma: no cover
+    */home/*
